@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import {HookUseState} from './components/04-useState/HookUseState';
+import {Filter} from './components/05-filter/Filter';
 
 function App() {
 
     return (
         <>
-            <HookUseState/>
+            <Filter/>
         </>
 
     );
