@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import {MoneyApp} from './components/monday-hw-help-01/MoneyApp';
+import {MyInput} from './components/06-MyInput/MyInput';
 
 function App() {
 
     return (
         <>
-            <MoneyApp/>
+            <MyInput/>
         </>
 
     );
