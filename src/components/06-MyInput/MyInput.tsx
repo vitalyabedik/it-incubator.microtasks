@@ -1,5 +1,6 @@
 import {useState} from 'react';
-import {Input} from './Input';
+
+import {FullInput} from './FullInput';
 
 
 export const MyInput = () => {
@@ -9,10 +10,14 @@ export const MyInput = () => {
         {message: 'message3'},
     ])
 
+    const addMessage = (title: string) => {
+        let newMessage = {message: title}
+        setMessage([ newMessage, ...message])
+    }
+
     return (
         <div>
-            <Input/>
-            <button>+</button>
+            <FullInput addMessage={addMessage}/>
             {message.map((el, index) => {
                 return (
                     <div key={index}>{el.message}</div>
