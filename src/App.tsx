@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import {Filter} from './components/05-filter/Filter';
+import {MoneyApp} from './components/monday-hw-help-01/MoneyApp';
 
 function App() {
 
     return (
         <>
-            <Filter/>
+            <MoneyApp/>
         </>
 
     );
