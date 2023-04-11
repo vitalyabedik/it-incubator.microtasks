@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import {MyInput} from './components/06-MyInput/MyInput';
+import {MondayExtra1} from './components/monday-extra-lesson-01/MondayExtra1';
 
 function App() {
 
     return (
         <>
-            <MyInput/>
+            <MondayExtra1/>
         </>
 
     );
