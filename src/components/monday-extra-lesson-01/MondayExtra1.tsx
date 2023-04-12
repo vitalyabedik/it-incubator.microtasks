@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import {Todolist} from './Todolist';
 import {v1} from 'uuid';
 
+import './MondayExtra1.css';
+
 
 type ObjectType = {
     title: string
