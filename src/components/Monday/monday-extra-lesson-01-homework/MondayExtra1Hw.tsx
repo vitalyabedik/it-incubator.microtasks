@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 
 // Hi guys! Let`s reinforce our session:
 
@@ -29,8 +30,7 @@ import React, {useEffect, useState} from 'react';
 //Good luck!
 
 
-
-type PropsType=
+type PropsType =
     {
         userId: number,
         id: number,
@@ -41,11 +41,30 @@ type PropsType=
 export const MondayExtra1Hw = () => {
     const [todos, setTodos] = useState<Array<PropsType>>([])
 
-    useEffect(()=>{
-        fetch('https://jsonplaceholder.typicode.com/todos')
-            .then(response => response.json())
-            .then(json => setTodos(json))
-    },[])
+    const mapTodos = todos.map(el => {
+        return (
+            <li>
+                <span>{el.id} - </span>
+                <span>{el.title}</span>
+                <span>{el.completed}</span>
+            </li>
+        )
+    })
+
+    const fetchPosts = () => {
+        axios.get('https://jsonplaceholder.typicode.com/todos')
+            .then((res) => {
+                setTodos(res.data)
+            })
+    }
+
+    useEffect(() => {
+        fetchPosts()
+    }, [])
+
+    const onClickShowPostsHandler = () => {
+        fetchPosts()
+    }
 
     const onClickHandler = () => {
         setTodos([])
@@ -53,48 +72,12 @@ export const MondayExtra1Hw = () => {
 
     return (
         <div className="App">
+            <button onClick={onClickShowPostsHandler}>SHOW POSTS</button>
             <button onClick={onClickHandler}>CLEAN POSTS</button>
-            <ul>
-                {todos.map(el => {
-                    return (
-                        <li>
-                            <span>{el.id} - </span>
-                            <span>{el.title}</span>
-                            <span>{el.completed}</span>
-                        </li>
-                    )
-                })}
-
-            </ul>
-
-
+            <ul>{mapTodos}</ul>
         </div>
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //----------------------------------------------------------------------------------------
