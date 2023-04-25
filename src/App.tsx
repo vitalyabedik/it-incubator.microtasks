@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import {AssociativeArray} from './components/Monday/07-associative-array/AssociativeArray';
+import {TuesdayExtra1} from './components/Tuesday/tuesday-extra-lesson-01/TuesdayExtra1';
 
 function App() {
 
     return (
         <>
-            <AssociativeArray/>
+            <TuesdayExtra1/>
         </>
 
     );
