@@ -67,7 +67,6 @@ export const TuesdayExtra1 = () => {
         }
     });
 
-
     const removeTodolist = (todolistId: string) => {
         setTodolists(todolists.filter(el => el.id !== todolistId))
         delete tasks[todolistId]
