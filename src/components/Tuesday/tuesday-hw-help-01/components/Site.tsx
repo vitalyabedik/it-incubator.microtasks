@@ -7,6 +7,8 @@ import {PageOne} from './pages/PageOne';
 import {PageTwo} from './pages/PageTwo';
 import {PageThree} from './pages/PageThree';
 import {Error404} from './pages/Error404';
+import {dataState} from './dataState/dataState';
+import {Page} from './pages/Page';
 
 
 export const Site = () => {
@@ -15,9 +17,9 @@ export const Site = () => {
             <div className={styles.header}><h1>HEADER</h1></div>
             <div className={styles.body}>
                 <div className={styles.nav}>
-                    <div><NavLink className={({isActive}) => isActive ? styles.active : styles.navLink} to={'/page1'}>Page 1</NavLink></div>
-                    <div><NavLink className={({isActive}) => isActive ? styles.active : styles.navLink} to={'/page2'}>Page 2</NavLink></div>
-                    <div><NavLink className={({isActive}) => isActive ? styles.active : styles.navLink} to={'/page3'}>Page 3</NavLink></div>
+                    <div><NavLink className={({isActive}) => isActive ? styles.active : styles.navLink} to={'/page/0'}>Page 1</NavLink></div>
+                    <div><NavLink className={({isActive}) => isActive ? styles.active : styles.navLink} to={'/page/1'}>Page 2</NavLink></div>
+                    <div><NavLink className={({isActive}) => isActive ? styles.active : styles.navLink} to={'/page/2'}>Page 3</NavLink></div>
 
                     <p><a href='/page3'>Нативная ссылка</a></p>
                 </div>
@@ -26,9 +28,9 @@ export const Site = () => {
                     <Routes>
                         <Route path={'/'} element={<Navigate to={'/page1'}/>}/>
 
-                        <Route path={'/page1'} element={<PageOne/>}/>
-                        <Route path={'/page2'} element={<PageTwo/>}/>
-                        <Route path={'/page3'} element={<PageThree/>}/>
+                        <Route path={'/page/:id'} element={<Page pages={dataState.pages}/>}/>
+                        <Route path={'/page/:id'} element={<Page pages={dataState.pages}/>}/>
+                        <Route path={'/page/:id'} element={<Page pages={dataState.pages}/>}/>
 
                         <Route path={'*'} element={<Error404/>}/>
                     </Routes>

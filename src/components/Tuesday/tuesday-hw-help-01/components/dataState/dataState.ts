@@ -24,3 +24,5 @@ export type PagesType = {
     heading: string
     about: string
 }
+
+// console.log(dataState.pages[0])
