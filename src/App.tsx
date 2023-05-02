@@ -2,13 +2,13 @@ import React from 'react';
 
 import './App.css';
 
-import {TuesdayExtra1Hw} from './components/Tuesday/tuesday-hw-help-01/TuesdayExtra1Hw';
+import {TuesdayExtra2} from './components/Tuesday/tuesday-extra-lesson-02/TuesdayExtra2';
 
 function App() {
 
     return (
         <>
-            <TuesdayExtra1Hw/>
+            <TuesdayExtra2/>
         </>
 
     );
