@@ -164,11 +164,11 @@
         ...man6,
         mother: {
             ...man6.mother,
-            parents: man6.mother.parents.map((obj, index) => ({
+            parents: man6.mother.parents.map(obj => ({
                 ...obj,
                 favoriteDish: {
-                    ...man6.mother.parents[index],
-                    favoriteDish: {...man6.mother.parents[index].favoriteDish}
+                    ...obj.favoriteDish,
+                    title: {...obj.favoriteDish.title}
                 }
             }))
         }
@@ -176,10 +176,10 @@
     man6FullCopy.mother.parents[0].favoriteDish.title = '123'
     man6FullCopy.mother.parents[1].favoriteDish.title = '999'
 
-    // console.log(man6FullCopy.mother.parents[0].favoriteDish.title)
-    // console.log(man6FullCopy.mother.parents[1].favoriteDish.title)
-    // console.log(man6.mother.parents[0].favoriteDish.title)
-    // console.log(man6.mother.parents[1].favoriteDish.title)
+    console.log(man6FullCopy.mother.parents[0].favoriteDish.title)
+    console.log(man6FullCopy.mother.parents[1].favoriteDish.title)
+    console.log(man6.mother.parents[0].favoriteDish.title)
+    console.log(man6.mother.parents[1].favoriteDish.title)
 
 
     //10 Array of objects inside an object -> object -> array -> object ->  object
@@ -225,11 +225,11 @@
         ...man7,
         mother: {
             ...man7.mother,
-            parents: man7.mother.parents.map((obj, index) => ({
+            parents: man7.mother.parents.map(obj=> ({
                 ...obj,
                 favoriteDish: {
-                    ...man7.mother.parents[index],
-                    ingredients: man7.mother.parents[index].favoriteDish.ingredients.map(ingred => ({...ingred}))
+                    ...obj.favoriteDish,
+                    ingredients: obj.favoriteDish.ingredients.map(ingred => ({...ingred}))
                 }
             }))
         }
@@ -238,9 +238,9 @@
     man7FullCopy.mother.parents[0].favoriteDish.ingredients[0].title = 'nice task'
     man7FullCopy.mother.parents[0].favoriteDish.ingredients[1].title = 'Yoooo'
 
-    console.log(man7FullCopy.mother.parents[0].favoriteDish.ingredients[0].title)
-    console.log(man7FullCopy.mother.parents[0].favoriteDish.ingredients[1].title)
-    console.log(man7.mother.parents[0].favoriteDish.ingredients[0].title)
-    console.log(man7.mother.parents[0].favoriteDish.ingredients[1].title)
+    // console.log(man7FullCopy.mother.parents[0].favoriteDish.ingredients[0].title)
+    // console.log(man7FullCopy.mother.parents[0].favoriteDish.ingredients[1].title)
+    // console.log(man7.mother.parents[0].favoriteDish.ingredients[0].title)
+    // console.log(man7.mother.parents[0].favoriteDish.ingredients[1].title)
 
 </script>
