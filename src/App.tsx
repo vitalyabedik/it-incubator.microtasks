@@ -2,15 +2,25 @@ import React from 'react';
 
 import './App.css';
 
-import {TuesdayExtra2Hw} from './components/Tuesday/tuesday-hw-help-02/TuesdayExtra2Hw';
-import {TuesdayExtra1Hw} from './components/Tuesday/tuesday-hw-help-01/TuesdayExtra1Hw';
+import {
+    WednesdayExtraLesson02Task1
+} from './components/Wednesday/wednesday-extra-lesson-02/1.1/WednesdayExtraLesson02Task1';
+
+import {
+    WednesdayExtraLesson02Task2
+} from './components/Wednesday/wednesday-extra-lesson-02/1.2/WednesdayExtraLesson02Task2';
+
+import {
+    WednesdayExtraLesson02Task3
+} from './components/Wednesday/wednesday-extra-lesson-02/1.3/WednesdayExtraLesson02Task3';
 
 function App() {
 
     return (
         <>
-            <TuesdayExtra2Hw/>
-            {/*<TuesdayExtra1Hw/>*/}
+            <WednesdayExtraLesson02Task1/>
+            {/*<WednesdayExtraLesson02Task2/>*/}
+            {/*<WednesdayExtraLesson02Task3/>*/}
         </>
 
     );

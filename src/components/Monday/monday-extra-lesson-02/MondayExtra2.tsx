@@ -129,7 +129,7 @@ export function MondayExtra2() {
 //     }
 //
 //     return (
-//         <div className="App">
+//         <div className="WednesdayExtraLesson02Task2">
 //             <div>
 //                 {/*<input type="text"/>*/}
 //                 {/*<button>+</button>*/}

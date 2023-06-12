@@ -55,7 +55,7 @@ const Nominal = styled.span`
 // ------------------------------------------------------
 
 // import React from 'react';
-// import {MoneyType} from './App';
+// import {MoneyType} from './WednesdayExtraLesson02Task2';
 // import styled from 'styled-components';
 //
 // type CurrentBankomatPropsType = {

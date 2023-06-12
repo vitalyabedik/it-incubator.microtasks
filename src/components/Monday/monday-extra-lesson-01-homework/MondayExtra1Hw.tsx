@@ -16,7 +16,7 @@ import axios from 'axios';
 //const mapTodos=todos.map(el => {...
 
 // return (
-//     <div className="App">
+//     <div className="WednesdayExtraLesson02Task2">
 //         <button onClick={onClickHandler}>CLEAN POSTS</button>
 //         <ul>
 //             {mapTodos}
@@ -95,7 +95,7 @@ export const MondayExtra1Hw = () => {
 //         completed: boolean
 //     }
 //
-// function App() {
+// function WednesdayExtraLesson02Task2() {
 //     const [todos, setTodos] = useState<Array<PropsType>>([])
 //
 //     const axiosRequest=()=>{
@@ -142,7 +142,7 @@ export const MondayExtra1Hw = () => {
 //     }
 //
 //     return (
-//         <div className="App">
+//         <div className="WednesdayExtraLesson02Task2">
 //             <button onClick={onClickHandler}>CLEAN POSTS</button>
 //             <button onClick={onClickHandlerForRedisplay}>REDISPLAY</button>
 //             <ul>
@@ -162,4 +162,4 @@ export const MondayExtra1Hw = () => {
 //     );
 // }
 //
-// export default App;
+// export default WednesdayExtraLesson02Task2;
