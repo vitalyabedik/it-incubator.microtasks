@@ -1,5 +1,5 @@
 import {Fragment} from 'react';
-import {Task_3} from "./task_3/Task_3";
+import { Task_3} from './task_3/Task_3';
 
 export type UserType = {
   [key: string]: { name: string, id: string }

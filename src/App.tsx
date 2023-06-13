@@ -18,9 +18,9 @@ function App() {
 
     return (
         <>
-            <WednesdayExtraLesson02Task1/>
+            {/*<WednesdayExtraLesson02Task1/>*/}
             {/*<WednesdayExtraLesson02Task2/>*/}
-            {/*<WednesdayExtraLesson02Task3/>*/}
+            <WednesdayExtraLesson02Task3/>
         </>
 
     );
